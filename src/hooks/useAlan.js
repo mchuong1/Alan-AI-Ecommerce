@@ -50,7 +50,7 @@ export default function useAlan() {
       } else {
         addToCart(item.id, quantity)
         alanInstance.playText(
-          `Add ${quantity} of the ${name} item to your cart`
+          `Added ${quantity} of the ${name} item to your cart`
         )
       }
     },
@@ -110,7 +110,7 @@ export default function useAlan() {
         }
       })
     )
-  }, [])
+  }, [alanInstance])
 
   return null
 }
